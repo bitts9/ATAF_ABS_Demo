@@ -1,0 +1,14 @@
+{
+	"username": "perf@test",
+	"password": "UnVsZXMxMjM0NTY=",
+	"cluster": "Europe",
+	"country": "Belgium",
+	"companycode": "2258",
+	"requesttype": "Urgent/Manual",
+	"po": "Yes",
+	"invoiceavailable": "Yes",
+	"bankdetailsdoc": "Yes",
+	"linemanager": "Adam@Unilever",
+	"reasonformanualpayment": "TEST AUTOMATION"
+	
+}
