@@ -1,5 +1,5 @@
-<?xml version="1.0" encoding="UTF-8"?><testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="1" time="66.409271">
-<testcase classname="Login feature test" name="Login with valid credentials" time="66.409271">
+<?xml version="1.0" encoding="UTF-8"?><testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="1" time="60.59737">
+<testcase classname="Login feature test" name="Login with valid credentials" time="60.59737">
 <system-out><![CDATA[Given Test data file is set as "NonPega_TestData.json"......................passed
 Given Open the browser and navigate to the "NonPega" url....................passed
 When I login to NonPegaApp with "nonpegauser" and "nonpegapassword".........passed

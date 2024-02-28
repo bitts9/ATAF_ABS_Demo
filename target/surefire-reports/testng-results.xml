@@ -2,19 +2,19 @@
 <testng-results total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-02-22T12:44:48Z" name="SmokeSuite" finished-at="2024-02-22T12:45:55Z" duration-ms="67023">
+  <suite started-at="2024-02-28T11:28:45Z" name="SmokeSuite" finished-at="2024-02-28T11:29:46Z" duration-ms="61383">
     <groups>
       <group name="cucumber">
         <method signature="AbstractTestNGCucumberTests.runScenario(cucumber.api.testng.PickleEventWrapper, cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:com.ABS.ataf.common.runner.LoginRunner@323b36e0]" name="runScenario" class="cucumber.api.testng.AbstractTestNGCucumberTests"/>
       </group> <!-- cucumber -->
     </groups>
-    <test started-at="2024-02-22T12:44:48Z" name="TestDemo" finished-at="2024-02-22T12:45:55Z" duration-ms="67023">
+    <test started-at="2024-02-28T11:28:45Z" name="TestDemo" finished-at="2024-02-28T11:29:46Z" duration-ms="61383">
       <class name="com.ABS.ataf.common.runner.LoginRunner">
-        <test-method is-config="true" signature="setUpClass()[pri:0, instance:com.ABS.ataf.common.runner.LoginRunner@323b36e0]" started-at="2024-02-22T18:14:48Z" name="setUpClass" finished-at="2024-02-22T18:14:48Z" duration-ms="185" status="PASS">
+        <test-method is-config="true" signature="setUpClass()[pri:0, instance:com.ABS.ataf.common.runner.LoginRunner@323b36e0]" started-at="2024-02-28T16:58:45Z" name="setUpClass" finished-at="2024-02-28T16:58:45Z" duration-ms="195" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpClass -->
-        <test-method signature="runScenario(cucumber.api.testng.PickleEventWrapper, cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:com.ABS.ataf.common.runner.LoginRunner@323b36e0]" started-at="2024-02-22T18:14:48Z" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-02-22T18:15:55Z" duration-ms="66701" status="PASS">
+        <test-method signature="runScenario(cucumber.api.testng.PickleEventWrapper, cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:com.ABS.ataf.common.runner.LoginRunner@323b36e0]" started-at="2024-02-28T16:58:45Z" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-02-28T16:59:46Z" duration-ms="60862" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -30,7 +30,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:com.ABS.ataf.common.runner.LoginRunner@323b36e0]" started-at="2024-02-22T18:15:55Z" name="tearDownClass" finished-at="2024-02-22T18:15:55Z" duration-ms="90" status="PASS">
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:com.ABS.ataf.common.runner.LoginRunner@323b36e0]" started-at="2024-02-28T16:59:46Z" name="tearDownClass" finished-at="2024-02-28T16:59:46Z" duration-ms="275" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownClass -->
