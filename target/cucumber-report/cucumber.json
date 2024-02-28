@@ -1,0 +1,470 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 3,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 271600,
+              "status": "passed"
+            },
+            "before": [
+              {
+                "result": {
+                  "duration": 75800,
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "TestBase.beforeStep(Scenario)"
+                }
+              }
+            ],
+            "line": 4,
+            "name": "Test data file is set as \"NonPega_TestData.json\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"NonPega_TestData.json\"",
+                  "offset": 25
+                }
+              ],
+              "location": "LoginTest.test_data_file_is_set_as(String)"
+            },
+            "after": [
+              {
+                "result": {
+                  "duration": 30900,
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "TestBase.afterStep(Scenario)"
+                }
+              }
+            ],
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 2454733200,
+              "status": "passed"
+            },
+            "match": {
+              "location": "TestBase.before()"
+            }
+          }
+        ],
+        "line": 7,
+        "name": "Login with valid credentials",
+        "description": "",
+        "id": "login-feature-test;login-with-valid-credentials",
+        "after": [
+          {
+            "result": {
+              "duration": 339500,
+              "status": "passed"
+            },
+            "match": {
+              "location": "TestBase.after(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 9156831600,
+              "status": "passed"
+            },
+            "before": [
+              {
+                "result": {
+                  "duration": 8700,
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "TestBase.beforeStep(Scenario)"
+                }
+              }
+            ],
+            "line": 8,
+            "name": "Open the browser and navigate to the \"NonPega\" url",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"NonPega\"",
+                  "offset": 37
+                }
+              ],
+              "location": "LoginTest.open_the_browser_and_navigate_to_the_url(String)"
+            },
+            "after": [
+              {
+                "result": {
+                  "duration": 69700,
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "TestBase.afterStep(Scenario)"
+                }
+              }
+            ],
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 5476692100,
+              "status": "passed"
+            },
+            "before": [
+              {
+                "result": {
+                  "duration": 12000,
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "TestBase.beforeStep(Scenario)"
+                }
+              }
+            ],
+            "line": 9,
+            "name": "I login to NonPegaApp with \"nonpegauser\" and \"nonpegapassword\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"nonpegauser\"",
+                  "offset": 27
+                },
+                {
+                  "val": "\"nonpegapassword\"",
+                  "offset": 45
+                }
+              ],
+              "location": "LoginTest.i_login_NonPega_with_and(String,String)"
+            },
+            "after": [
+              {
+                "result": {
+                  "duration": 38500,
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "TestBase.afterStep(Scenario)"
+                }
+              }
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 4217600400,
+              "status": "passed"
+            },
+            "before": [
+              {
+                "result": {
+                  "duration": 13600,
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "TestBase.beforeStep(Scenario)"
+                }
+              }
+            ],
+            "line": 10,
+            "name": "I search for \"productname\" in the product list page",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"productname\"",
+                  "offset": 13
+                }
+              ],
+              "location": "CDUHomePageStepdef.i_search_product_homepage(String)"
+            },
+            "after": [
+              {
+                "result": {
+                  "duration": 59600,
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "TestBase.afterStep(Scenario)"
+                }
+              }
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 3095787200,
+              "status": "passed"
+            },
+            "before": [
+              {
+                "result": {
+                  "duration": 10800,
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "TestBase.beforeStep(Scenario)"
+                }
+              }
+            ],
+            "line": 11,
+            "name": "I verify \"productprice\" in the productpage",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"productprice\"",
+                  "offset": 9
+                }
+              ],
+              "location": "CDUHomePageStepdef.i_verify_price(String)"
+            },
+            "after": [
+              {
+                "result": {
+                  "duration": 41900,
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "TestBase.afterStep(Scenario)"
+                }
+              }
+            ],
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 2129589000,
+              "status": "passed"
+            },
+            "before": [
+              {
+                "result": {
+                  "duration": 7100,
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "TestBase.beforeStep(Scenario)"
+                }
+              }
+            ],
+            "line": 12,
+            "name": "I add the product to cart",
+            "match": {
+              "location": "CDUHomePageStepdef.i_add_product_cart()"
+            },
+            "after": [
+              {
+                "result": {
+                  "duration": 92500,
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "TestBase.afterStep(Scenario)"
+                }
+              }
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 2103310300,
+              "status": "passed"
+            },
+            "before": [
+              {
+                "result": {
+                  "duration": 26900,
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "TestBase.beforeStep(Scenario)"
+                }
+              }
+            ],
+            "line": 13,
+            "name": "I open the cart",
+            "match": {
+              "location": "CDUHomePageStepdef.i_open_cart()"
+            },
+            "after": [
+              {
+                "result": {
+                  "duration": 89500,
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "TestBase.afterStep(Scenario)"
+                }
+              }
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 5224537700,
+              "status": "passed"
+            },
+            "before": [
+              {
+                "result": {
+                  "duration": 14100,
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "TestBase.beforeStep(Scenario)"
+                }
+              }
+            ],
+            "line": 14,
+            "name": "I remove the product from cart",
+            "match": {
+              "location": "CDUHomePageStepdef.i_remove_product_cart()"
+            },
+            "after": [
+              {
+                "result": {
+                  "duration": 106600,
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "TestBase.afterStep(Scenario)"
+                }
+              }
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 26234618200,
+              "status": "passed"
+            },
+            "before": [
+              {
+                "result": {
+                  "duration": 43800,
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "TestBase.beforeStep(Scenario)"
+                }
+              }
+            ],
+            "line": 15,
+            "name": "I verify the cart is empty",
+            "match": {
+              "location": "CDUHomePageStepdef.i_verify_cart_is_empty()"
+            },
+            "after": [
+              {
+                "result": {
+                  "duration": 93400,
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "TestBase.afterStep(Scenario)"
+                }
+              }
+            ],
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 6274221900,
+              "status": "passed"
+            },
+            "before": [
+              {
+                "result": {
+                  "duration": 21300,
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "TestBase.beforeStep(Scenario)"
+                }
+              }
+            ],
+            "line": 16,
+            "name": "I Logout from NonPegaApp",
+            "match": {
+              "location": "LogoutTest.i_Logout_from_nonpega()"
+            },
+            "after": [
+              {
+                "result": {
+                  "duration": 30300,
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "TestBase.afterStep(Scenario)"
+                }
+              }
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 37283200,
+              "status": "passed"
+            },
+            "before": [
+              {
+                "result": {
+                  "duration": 7100,
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "TestBase.beforeStep(Scenario)"
+                }
+              }
+            ],
+            "line": 17,
+            "name": "Logout should be successful from NonPegaApp",
+            "match": {
+              "location": "LogoutTest.logout_should_be_successful_nonpega()"
+            },
+            "after": [
+              {
+                "result": {
+                  "duration": 35100,
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "TestBase.afterStep(Scenario)"
+                }
+              }
+            ],
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@testnonpega1"
+          },
+          {
+            "name": "@alltest"
+          }
+        ]
+      }
+    ],
+    "name": "Login feature test",
+    "description": "",
+    "id": "login-feature-test",
+    "keyword": "Feature",
+    "uri": "src/test/resources/featurefilesNonPegaApp/DemoNonPega.feature",
+    "tags": []
+  }
+]

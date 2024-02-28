@@ -1,0 +1,17 @@
+Feature: Login feature test
+
+  Background:                                              # src/test/resources/featurefilesNonPegaApp/DemoNonPega.feature:3
+    Given Test data file is set as "NonPega_TestData.json" # LoginTest.test_data_file_is_set_as(String)
+
+  @testnonpega1 @alltest
+  Scenario: Login with valid credentials                                # src/test/resources/featurefilesNonPegaApp/DemoNonPega.feature:7
+    Given Open the browser and navigate to the "NonPega" url            # LoginTest.open_the_browser_and_navigate_to_the_url(String)
+    When I login to NonPegaApp with "nonpegauser" and "nonpegapassword" # LoginTest.i_login_NonPega_with_and(String,String)
+    And I search for "productname" in the product list page             # CDUHomePageStepdef.i_search_product_homepage(String)
+    Then I verify "productprice" in the productpage                     # CDUHomePageStepdef.i_verify_price(String)
+    When I add the product to cart                                      # CDUHomePageStepdef.i_add_product_cart()
+    And I open the cart                                                 # CDUHomePageStepdef.i_open_cart()
+    And I remove the product from cart                                  # CDUHomePageStepdef.i_remove_product_cart()
+    Then I verify the cart is empty                                     # CDUHomePageStepdef.i_verify_cart_is_empty()
+    When I Logout from NonPegaApp                                       # LogoutTest.i_Logout_from_nonpega()
+    Then Logout should be successful from NonPegaApp                    # LogoutTest.logout_should_be_successful_nonpega()

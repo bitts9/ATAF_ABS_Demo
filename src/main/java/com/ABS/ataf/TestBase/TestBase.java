@@ -112,7 +112,7 @@ public class TestBase {
 			scenario.embed(((TakesScreenshot) getDriver()).getScreenshotAs(OutputType.BYTES), "image/png");
 		}
 		System.out.println("Driver in After Method is: " + driver);
-		// driver.quit();
+		driver.quit();
 		log.info("Browser closed");
 	}
 

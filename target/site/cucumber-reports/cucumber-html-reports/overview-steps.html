@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html>
+<head>
+  
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/jquery.tablesorter.min.js"></script>
+<script type="text/javascript" src="js/Chart.min.js"></script>
+<script type="text/javascript" src="js/moment.min.js"></script>
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+
+<link rel="stylesheet" href="css/bootstrap.min.css" type="text/css"/>
+<link rel="stylesheet" href="css/cucumber.css" type="text/css"/>
+<link rel="stylesheet" href="css/font-awesome.min.css"/>
+<link rel="shortcut icon" href="images/favicon.png"/>
+
+<script type="text/javascript">
+$(document).ready(function() {
+    // this will tell tablesorter to try looking for the data-value attribute
+    // if present, it'll sort by that instead
+    // otherwise, it'll sort by the text content of the table cell
+    $("#tablesorter").tablesorter({
+        textAttribute: 'data-value',
+        // ignores the first row of the header, the 'scenario', 'steps', since
+        // sorting those doesn't make sense
+        selectorHeaders: '> thead tr:not(.dont-sort) th',
+        // use a stable sort
+        sortStable: true
+    });
+});
+</script>
+
+
+
+
+
+
+
+
+
+
+
+  
+<title>Cucumber Reports (no 1) - Steps Overview</title>
+
+</head>
+<body>
+
+<nav class="navbar navbar-default navbar-fixed-top" id="navigation">
+  <div class="container-fluid">
+    <div class="collapse navbar-collapse">
+      <p class="navbar-text navbar-left">Cucumber Report</p>
+      <ul class="nav navbar-nav navbar-right">
+                <li role="presentation" ><a href="overview-features.html">Features</a></li>
+        <li role="presentation" ><a href="overview-tags.html">Tags</a></li>
+        <li role="presentation"     class="active" ><a href="overview-steps.html">Steps</a></li>
+                <li role="presentation" ><a href="overview-failures.html">Failures</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+<div class="container-fluid">
+  <div class="col-md-5 col-md-offset-1">
+    
+<table class="table table-bordered" id="build-info">
+  <thead>
+    <tr>
+      <th>Project</th>
+              <th>Number</th>
+            <th>Date</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr class="info">
+      <td>ATAF_2_0</td>
+              <td>1</td>
+            <td>22 Feb 2024, 18:16</td>
+    </tr>
+  </tbody>
+</table>
+
+  </div>
+  <div class="col-md-3 col-md-offset-2">
+      </div>
+</div>
+
+
+<div id="report-lead" class="container-fluid">
+  <div class="col-md-10 col-md-offset-1">
+    <h2>Steps Statistics</h2>
+          <p>The following graph shows step statistics for this build. Below list is based on results.
+ step does not provide information about result then is not listed below.
+ Additionally @Before and @After are not counted because they are part of the scenarios, not steps.</p>
+      </div>
+</div>
+
+<div class="container-fluid" id="report">
+  <div class="row">
+    <div class="col-md-10 col-md-offset-1">
+      <table id="tablesorter" class="stats-table table-hover">
+
+        <thead>
+          <tr class="header">
+            <th>Implementation</th>
+            <th>Occurrences</th>
+            <th>Duration</th>
+            <th>Average</th>
+            <th>Ratio</th>
+          </tr>
+        </thead>
+
+        <tbody>
+                      <tr>
+              <td class="location">CDUHomePageStepdef.i_add_product_cart()</td>
+              <td>1</td>
+              <td class="duration" data-value="2129589000">2s 129ms</td>
+              <td class="duration" data-value="2129589000">2s 129ms</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">CDUHomePageStepdef.i_open_cart()</td>
+              <td>1</td>
+              <td class="duration" data-value="2103310300">2s 103ms</td>
+              <td class="duration" data-value="2103310300">2s 103ms</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">CDUHomePageStepdef.i_remove_product_cart()</td>
+              <td>1</td>
+              <td class="duration" data-value="5224537700">5s 224ms</td>
+              <td class="duration" data-value="5224537700">5s 224ms</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">CDUHomePageStepdef.i_search_product_homepage(String)</td>
+              <td>1</td>
+              <td class="duration" data-value="4217600400">4s 217ms</td>
+              <td class="duration" data-value="4217600400">4s 217ms</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">CDUHomePageStepdef.i_verify_cart_is_empty()</td>
+              <td>1</td>
+              <td class="duration" data-value="26234618200">26s 234ms</td>
+              <td class="duration" data-value="26234618200">26s 234ms</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">CDUHomePageStepdef.i_verify_price(String)</td>
+              <td>1</td>
+              <td class="duration" data-value="3095787200">3s 095ms</td>
+              <td class="duration" data-value="3095787200">3s 095ms</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">LoginTest.i_login_NonPega_with_and(String,String)</td>
+              <td>1</td>
+              <td class="duration" data-value="5476692100">5s 476ms</td>
+              <td class="duration" data-value="5476692100">5s 476ms</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">LoginTest.open_the_browser_and_navigate_to_the_url(String)</td>
+              <td>1</td>
+              <td class="duration" data-value="9156831600">9s 156ms</td>
+              <td class="duration" data-value="9156831600">9s 156ms</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">LoginTest.test_data_file_is_set_as(String)</td>
+              <td>1</td>
+              <td class="duration" data-value="271600">000ms</td>
+              <td class="duration" data-value="271600">000ms</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">LogoutTest.i_Logout_from_nonpega()</td>
+              <td>1</td>
+              <td class="duration" data-value="6274221900">6s 274ms</td>
+              <td class="duration" data-value="6274221900">6s 274ms</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">LogoutTest.logout_should_be_successful_nonpega()</td>
+              <td>1</td>
+              <td class="duration" data-value="37283200">037ms</td>
+              <td class="duration" data-value="37283200">037ms</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">TestBase.after(Scenario)</td>
+              <td>1</td>
+              <td class="duration" data-value="339500">000ms</td>
+              <td class="duration" data-value="339500">000ms</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">TestBase.before()</td>
+              <td>1</td>
+              <td class="duration" data-value="2454733200">2s 454ms</td>
+              <td class="duration" data-value="2454733200">2s 454ms</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                  </tbody>
+
+        <tfoot class="total">
+          <tr>
+            <td>13</td>
+            <td>13</td>
+            <td class="duration">1m 6s 405ms</td>
+            <td class="duration">5s 108ms</td>
+            <td>Totals</td>
+          </tr>
+        </tfoot>
+
+      </table>
+    </div>
+  </div>
+</div>
+
+
+<nav class="navbar navbar-default" id="footer">
+  <div class="container-fluid">
+    <p class="navbar-text navbar-right">
+        <small>generate Cucumber HTML reports via:&nbsp;</small>
+        <a class="navbar-link" href="https://github.com/jenkinsci/cucumber-reports-plugin">Jenkins Plugin</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/cucumber-reporting">Standalone</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/cucumber-sandwich">Sandwich</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/maven-cucumber-reporting">Maven</a>
+        &nbsp;&nbsp;
+    </p>
+  </div>
+</nav>
+
+</body>
+</html>
